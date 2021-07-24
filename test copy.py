@@ -18,7 +18,7 @@ train_set = torchvision.datasets.MNIST(
     download=True,
     transform=torchvision.transforms.ToTensor(),
 )
-train_loader = data.DataLoader(train_set, batch_size=batch_size, shuffle=True)
+#train_loader = data.DataLoader(train_set, batch_size=batch_size, shuffle=True)
 
 train_set.shape
 
