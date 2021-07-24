@@ -12,12 +12,12 @@ lr = 0.008
 
 
 # DataLoader
-# train_set = torchvision.datasets.MNIST(
-#     root='mnist',
-#     train=True,
-#     download=True,
-#     transform=torchvision.transforms.ToTensor(),
-# )
+train_set = torchvision.datasets.MNIST(
+    root='mnist',
+    train=True,
+    download=True,
+    transform=torchvision.transforms.ToTensor(),
+)
 train_loader = data.DataLoader(train_set, batch_size=batch_size, shuffle=True)
 
 train_set.shape
